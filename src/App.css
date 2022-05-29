@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
+/*  */
+html{
+    font-size: 62.5%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+/* App css */
+
+
+/* Course card */
+.custom-card{
+    width: 250px;
+    border-radius: 1rem !important;
+    overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.custom-card .ant-card-meta-title {
+    white-space: unset;
+    font-size: 1.2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.custom-card .ant-card-meta-description {
+    font-size: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+
+.course-time-container{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.course-start-date, .course-length{
+    display: flex;
+}
+
+.course-begin-date, .course-time-length, .roadmap-no-course {
+    margin: 0;
+    padding-left: 1rem;
+}
+
+/* Roadmap  */
+
+.roadmap-container{
+    display: flex;
+}
+
+.roadmap-card{
+    display: flex;
+}
+
+.roadmap-container .ant-card-head-title{
+    white-space: unset;
+}
+
+.roadmap-item{
+    display: flex;
+}
+
+.roadmap-item p {
+    margin-bottom: 0;
+}
+
+.course-time{
+    padding-left: 3rem;
 }
